@@ -122,7 +122,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo "\n".color("yellow","# SABAR YA BOSKU ");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
-        sleep(25);
+        sleep(15);
         }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
@@ -136,7 +136,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo "\n".color("yellow","SABAR OJO NGERSULO");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
-        sleep(10);
+        sleep(5);
         }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
@@ -145,7 +145,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo "\n".color("yellow","# SABAR BOSKU JANGAN MENYERAHHH");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
-        sleep(10);
+        sleep(5);
         }
         sleep(10);
         $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EATLAH"}');
