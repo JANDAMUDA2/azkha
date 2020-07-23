@@ -127,7 +127,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
-        echo "\n".color("green","🔓▶️ Message: ".$message);
+        echo "\n".color("yellow","🔓▶️ Message: ".$message);
         goto gofood;
         }else{
         echo "\n".color("red","🔐▶️ Message: ".$message);
@@ -169,9 +169,9 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $voucher13 = getStr1('"title":"','",',$cekvoucher,"13");
         echo "\n".color("purple","🎫▶️ Total voucher ".$total." : ");
         echo "\n".color("nevy","                     1. ".$voucher1);
-        echo "\n".color("nevy","                     2. ".$voucher2);
-        echo "\n".color("nevy","                     3. ".$voucher3);
-        echo "\n".color("nevy","                     4. ".$voucher4);
+        echo "\n".color("green","                     2. ".$voucher2);
+        echo "\n".color("red","                     3. ".$voucher3);
+        echo "\n".color("yellow","                     4. ".$voucher4);
         echo "\n".color("nevy","                     5. ".$voucher5);
         echo "\n".color("nevy","                     6. ".$voucher6);
         echo "\n".color("nevy","                     7. ".$voucher7);
