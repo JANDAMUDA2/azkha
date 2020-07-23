@@ -148,7 +148,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         sleep(5);
         }
         sleep(10);
-        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"AKUSERIUSMAIN"}');
+        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOJEKAMAN"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("green","# Message: ".$messageboba09);
         sleep(3);
