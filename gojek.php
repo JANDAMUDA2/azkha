@@ -93,7 +93,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo color("nevy","+] TOKE ID : ".$token."\n\n");
         save("token.txt",$token);
         echo color("nevy","\n▬▬▬▬▬▬▬▬▬▬▬▬* KHARILIE LOST ANTI SAMBAT *▬▬▬▬▬▬▬▬▬▬▬▬");
-        echo "\n".color("nevy","# CLAIM VOUCHER GOPUD 1 ");
+        echo "\n".color("nevy","# CLAIM GOFOOD 1 ");
         echo "\n".color("yellow","# TUNGGU YA ");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
@@ -118,8 +118,8 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         }else{
         echo "\n".color("red","🔐▶️ Message: ".$message);
 	      gocar:
-        echo "\n".color("nevy","# CLAIM GOPUD 2");
-        echo "\n".color("yellow","# SABAR YA BOSKU ");
+        echo "\n".color("nevy","# GOFOOD 2 ");
+        echo "\n".color("yellow","# SABAR YA BOS ");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(30);
