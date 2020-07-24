@@ -80,7 +80,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $register = request("/v5/customers", null, $data);
         if(strpos($register, '"otp_token"')){
         $otptoken = getStr('"otp_token":"','"',$register);
-        echo color("green","📶▶️ UDAH KU SEND OTPNYA ")."\n";
+        echo color("purple","📶▶️ UDAH KU SEND OTPNYA ")."\n";
         otp:
         echo color("yellow","💬▶️ MASUKIN KODE OTPNYA  : ");
         $otp = trim(fgets(STDIN));
@@ -173,7 +173,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo "\n".color("red","                     3. ".$voucher3);
         echo "\n".color("yellow","                     4. ".$voucher4);
         echo "\n".color("green","                     5. ".$voucher5);
-        echo "\n".color("white","                     6. ".$voucher6);
+        echo "\n".color("red","                     6. ".$voucher6);
         echo "\n".color("purple","                     7. ".$voucher7);
         echo "\n".color("nevy","                     8. ".$voucher8);
         echo "\n".color("nevy","                     9. ".$voucher9);
@@ -221,12 +221,12 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
                                         $debug['text'] = $pesan;
                                         $debug['respon'] = json_decode($datas, true);
          setpin:
-         echo "\n".color("purple","🔧▶️ SET PIN GOPAY SEKALIAN ? !!!: Y/N ");
+         echo "\n".color("nevy","🔧▶️ SET PIN GOPAY SEKALIAN ? !!!: Y/N ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
          echo color("nevy","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN GOPAY = 010101 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
-         $data2 = '{"pin":"011111"}';
+         $data2 = '{"pin":"201111"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "OTP PIN 6 digit : ";
          $otpsetpin = trim(fgets(STDIN));
