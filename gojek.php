@@ -5,7 +5,7 @@ echo "\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
 echo "\e[96m_________________   WARNING !!!!!!!!  _________________ \n";
 echo "\e[96m          INI SCRIB GOJEK INI GRATIS BRO                \n";
 echo "\e[96m           JADI GUNAKANLAH DENGAN BIJAK                 \n";
-echo "\e[96m          SCRIB INI TIDAK DI JUAL BELIKAN               \n";
+echo "\e[96m          SCRIPT INI TIDAK DI JUAL BELIKAN               \n";
 echo "\e[96m              FOLLOW TELEGRAM JANDAMUDA :               \n";
 echo "\e[96m                    DI @J4ND4C4NT1K                      \n";
 echo "\e[96m                   ISTRIKU  SELERAKU         \n";
