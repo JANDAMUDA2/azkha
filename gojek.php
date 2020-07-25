@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
-include "function.php";
+include "l.php";
 echo "\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo "\e[96m_________________   WARNING !!!!!!!!  _________________ \n";
 echo "\e[96m          INI SCRIB GOJEK INI GRATIS BRO                \n";
@@ -15,37 +15,7 @@ echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
 echo "\e[93m            \e[96m BERDOA DULU SEBELUM CLAIM \e[93m \n";
 echo "\e[96m  ==============================================\n";
 echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-echo "\e[95m Sudah Punya User Id (Y/N ?: ";	
-$pilihy = trim(fgets(STDIN));
-if($pilihy == "y" || $pilihy == "sudah")
 echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-	goto login;
-login:
-echo "\e[96m▬▬▬ LANGSUNG KLIK ENTER DI BAWAH INI  ▬▬▬▬▬\n";
-$pass =  ( '║ User Login : ' );
-echo "\033[30;40m";
-$user = trim(fgets(STDIN));
-echo "\033[0m";
-if($user == "")
-{
-	echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-	echo "\e[95m KLIK ENTER LAGI  ";
-	$input = trim(fgets(STDIN));
-	echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-		goto ulang;
-}
-else
-{
-		echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";	
-		echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-		echo "\e[96m[🚫]        \e[91mSCRIPT JANDA MUDA CHANEL         \e[96m [🚫]\n";
-	        echo "\e[96m[🚫]           \e[91mKLIK ENTER SAJA BOS KU            \e[96m [🚫]\n";
-		echo "\e[96m[🚫]    \e[91mYOK BACA DOA DULU BOSKU AGAR BISA        \e[96m [🚫]\n";
-	        echo "\e[96m[🚫]  \e[91mSELAMAT KELILING INDONESIA BOSKU WKWK.     \e[96m [🚫]\n";
-		echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-goto login;
-}
-	return rtrim( $input, "\n" );
 ulang:
 echo "\n";
 echo "\e[96m ( FOLLOW TELEGRAM JANDAMUDA : @J4ND4C4NT1K.! $input)        \n";
@@ -161,12 +131,6 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $voucher5 = getStr1('"title":"','",',$cekvoucher,"5");
         $voucher6 = getStr1('"title":"','",',$cekvoucher,"6");
         $voucher7 = getStr1('"title":"','",',$cekvoucher,"7");
-        $voucher8 = getStr1('"title":"','",',$cekvoucher,"8");
-        $voucher9 = getStr1('"title":"','",',$cekvoucher,"9");
-        $voucher10 = getStr1('"title":"','",',$cekvoucher,"10");
-        $voucher11 = getStr1('"title":"','",',$cekvoucher,"11");
-        $voucher12 = getStr1('"title":"','",',$cekvoucher,"12");
-        $voucher13 = getStr1('"title":"','",',$cekvoucher,"13");
         echo "\n".color("purple","🎫▶️ Total voucher ".$total." : ");
         echo "\n".color("nevy","                     1. ".$voucher1);
         echo "\n".color("green","                     2. ".$voucher2);
@@ -175,12 +139,6 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo "\n".color("green","                     5. ".$voucher5);
         echo "\n".color("red","                     6. ".$voucher6);
         echo "\n".color("purple","                     7. ".$voucher7);
-        echo "\n".color("nevy","                     8. ".$voucher8);
-        echo "\n".color("nevy","                     9. ".$voucher9);
-        echo "\n".color("nevy","                     10. ".$voucher10);
-      	echo "\n".color("nevy","                     11. ".$voucher11);
-        echo "\n".color("nevy","                     12. ".$voucher12);
-        echo "\n".color("nevy","                     13. ".$voucher13);
         echo"\n";
         $expired1 = getStr1('"expiry_date":"','"',$cekvoucher,'1');
         $expired2 = getStr1('"expiry_date":"','"',$cekvoucher,'2');
@@ -189,13 +147,6 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $expired5 = getStr1('"expiry_date":"','"',$cekvoucher,'5');
         $expired6 = getStr1('"expiry_date":"','"',$cekvoucher,'6');
         $expired7 = getStr1('"expiry_date":"','"',$cekvoucher,'7');
-        $expired8 = getStr1('"expiry_date":"','"',$cekvoucher,'8');
-        $expired9 = getStr1('"expiry_date":"','"',$cekvoucher,'9');
-        $expired10 = getStr1('"expiry_date":"','"',$cekvoucher,'10');
-        $expired11 = getStr1('"expiry_date":"','"',$cekvoucher,'11');
-        $expired12 = getStr1('"expiry_date":"','"',$cekvoucher,'12');
-        $expired13 = getStr1('"expiry_date":"','"',$cekvoucher,'13');
-        
          setpin:
          echo "\n".color("nevy","🔧▶️ SET PIN GOPAY SEKALIAN ? !!!: Y/N ");
          $pilih1 = trim(fgets(STDIN));
