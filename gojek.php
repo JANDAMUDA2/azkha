@@ -92,7 +92,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo "\n".color("green","# SABAR YA BOS ");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
-        sleep(15);
+        sleep(30);
         }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
