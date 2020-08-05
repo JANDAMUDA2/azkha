@@ -2,7 +2,7 @@
 
 function request($url, $token = null, $data = null, $pin = null, $otpsetpin = null, $uuid = null){
 
-$header[] = "Host: api.gojekapi.com";
+$header[] = "Host: api.gojekapi.co.id";
 $header[] = "User-Agent: okhttp/3.10.0";
 $header[] = "Accept: application/json";
 $header[] = "Accept-Language: id-ID";
@@ -25,7 +25,7 @@ endif;
 if ($uuid):
 $header[] = "User-uuid: $uuid";
 endif;
-$c = curl_init("https://api.gojekapi.com".$url);
+$c = curl_init("https://api.gojekapi.co.id".$url);
     curl_setopt($c, CURLOPT_FOLLOWLOCATION, true);
     curl_setopt($c, CURLOPT_SSL_VERIFYPEER, false);
     if ($data):
